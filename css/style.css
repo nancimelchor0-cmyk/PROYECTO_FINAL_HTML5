@@ -1,232 +1,184 @@
-/* Estilos Generales */
+/* Estilos generales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: #333;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Encabezado */
 .header {
-    background-color: #ffffff;
-    color: #333;
+    background-color: #8B0000; /* Rojo oscuro, puede evocar historia */
+    color: white;
     padding: 1rem 0;
-    border-bottom: 2px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    flex-wrap: wrap;
 }
 
 .header .logo {
     display: flex;
     align-items: center;
-    margin-left: 20px; /* Espacio a la izquierda */
+    margin-left: 20px;
 }
 
 .header .logo img {
-    height: 50px; /* Tamaño del logo */
+    height: 50px; /* Ajusta el tamaño del logo */
     margin-right: 15px;
 }
 
-.header .logo h1 {
+.header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
-.header .logo p {
+.header p {
     margin: 0;
-    font-size: 0.9em;
-    color: #666;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
-.header .nav {
-    margin-right: 20px; /* Espacio a la derecha */
+.nav {
+    margin-right: 20px;
 }
 
-.header .nav a {
-    margin-left: 15px;
-    color: #555;
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
-    padding: 5px 10px;
     transition: color 0.3s ease;
 }
 
-.header .nav a:hover {
-    color: #0056b3;
-    text-decoration: none;
+.nav a:hover {
+    color: #FFD700; /* Dorado, como un toque de riqueza */
 }
 
-/* Sección Hero (Banner Principal) */
+main {
+    padding: 20px;
+}
+
 .hero {
-    background: url('../img/banner-dolores.jpg') no-repeat center center/cover; /* Reemplaza con tu imagen de banner */
-    height: 60vh;
+    background-color: #FFDEAD; /* Amarillo pálido, como el sol de Guanajuato */
+    color: #333;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.hero::before { /* Sombra para mejorar legibilidad del texto */
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .hero-texto {
-    position: relative; /* Para que esté sobre el overlay */
-    z-index: 1;
+    flex: 1;
+    padding-right: 20px;
 }
 
 .hero-texto .badge {
-    background-color: #ffc107; /* Amarillo */
-    color: #333;
-    padding: 8px 15px;
+    background-color: #DAA520; /* Dorado */
+    color: white;
+    padding: 5px 10px;
     border-radius: 5px;
-    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
     display: inline-block;
-    margin-bottom: 15px;
 }
 
 .hero-texto h2 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #8B0000; /* Rojo oscuro */
 }
 
 .hero-texto p {
-    font-size: 1.2em;
-    margin-bottom: 25px;
-    color: #eee;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .hero-texto .btn {
-    background-color: #007bff;
+    display: inline-block;
+    background-color: #8B0000; /* Rojo oscuro */
     color: white;
-    padding: 12px 25px;
+    padding: 10px 20px;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 1.1em;
+    margin-top: 20px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .hero-texto .btn:hover {
-    background-color: #0056b3;
-    text-decoration: none;
+    background-color: #A0522D; /* Marrón siena */
 }
 
-/* Secciones de Contenido */
-.seccion {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: #fff;
+.hero-imagen img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.seccion {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .seccion h2 {
+    color: #8B0000; /* Rojo oscuro */
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 2em;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .card {
     text-align: center;
 }
 
-.card h2 {
-    margin-bottom: 20px;
-}
-
 .card img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 300px; /* Limita la altura de las imágenes dentro de las cards */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
 }
 
-/* Grid para mini-cards */
+.card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
 
 .mini-card {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #eee;
+    background-color: #FFF8DC; /* Maíz, color cálido */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .mini-card h3 {
+    color: #A0522D; /* Marrón siena */
     margin-top: 0;
-    color: #007bff;
+    font-size: 1.3rem;
 }
 
-/* Formulario */
-.demo-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mini-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
-.demo-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    align-self: flex-start; /* Alinea etiquetas a la izquierda */
-}
-
-.demo-form input[type="text"],
-.demo-form input[type="email"],
-.demo-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Para que el padding no afecte el ancho total */
-}
-
-.demo-form button {
-    background-color: #28a745; /* Verde */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.demo-form button:hover {
-    background-color: #218838;
-}
-
-/* Pie de página */
 .footer {
     background-color: #333;
     color: white;
@@ -235,47 +187,69 @@ a:hover {
     margin-top: 40px;
 }
 
+/* Estilos para formularios (si los usas en otras secciones) */
+.demo-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.demo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.demo-form input[type="text"],
+.demo-form input[type="email"],
+.demo-form textarea {
+    width: calc(100% - 20px); /* Ajusta el ancho considerando el padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.demo-form button {
+    background-color: #8B0000; /* Rojo oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.demo-form button:hover {
+    background-color: #A0522D; /* Marrón siena */
+}
+
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
         text-align: center;
     }
-
-    .header .logo, .header .nav {
-        margin: 10px 0;
+    .header .logo {
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    .nav {
+        margin-right: 0;
         width: 100%;
     }
-
-    .header .logo {
-        justify-content: center;
+    .nav a {
+        display: block;
+        margin: 10px 0;
     }
-
-    .header .nav a {
-        display: block; /* Hace que los enlaces de navegación se apilen */
-        margin: 5px 0;
+    .hero {
+        flex-direction: column;
     }
-
-    .hero h2 {
-        font-size: 2.5em;
+    .hero-texto {
+        padding-right: 0;
+        margin-bottom: 20px;
     }
-
-    .hero-texto p {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h2 {
-        font-size: 2em;
-    }
-
-    .hero-texto .btn {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-
-    .grid {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    .hero-imagen img {
+        width: 100%;
     }
 }
