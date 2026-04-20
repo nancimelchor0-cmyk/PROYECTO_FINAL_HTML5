@@ -13,7 +13,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ a:hover {
 
 /* Encabezado */
 .header {
-    background-color: #000000;
+    background-color: #FFFFFF;
     color: #333;
     padding: 1rem 0;
     border-bottom: 2px solid #e0e0e0;
